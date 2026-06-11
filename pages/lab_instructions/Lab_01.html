@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIO 153 Lab 1 Overview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #08315f; --blue2: #0d4d8c; --gold: #c69214;
+      --ink: #1a2d45; --muted: #4a6080; --line: #c5d3e0;
+      --paper: #ffffff; --soft: #eef4fb; --green: #137a39;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #edf2f7; color: var(--ink); font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.62; -webkit-font-smoothing: antialiased; }
+    .page { max-width: 1000px; margin: auto; padding: 24px; }
+    .doc { background: var(--paper); border: 1px solid var(--line); box-shadow: 0 8px 24px rgba(8,49,95,.07); border-radius: 8px; overflow: hidden; }
+    .breadcrumb { font-size: .8rem; color: var(--muted); margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+    .breadcrumb a { color: var(--blue2); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .mod-hero { display: flex; align-items: stretch; border-bottom: 1px solid var(--line); }
+    .mod-hero-bar { width: 6px; background: var(--blue); flex-shrink: 0; }
+    .mod-hero-inner { padding: 20px 26px; flex: 1; display: flex; gap: 20px; align-items: flex-start; }
+    .mod-num { flex-shrink: 0; text-align: center; min-width: 52px; }
+    .mod-num .big { font-size: 3.2rem; font-weight: 800; color: var(--blue); line-height: 1; letter-spacing: -.04em; }
+    .mod-num .lbl { font-size: .6rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: #9aafcc; }
+    .mod-info { flex: 1; }
+    .eyebrow { color: var(--gold); font-weight: 700; text-transform: uppercase; letter-spacing: .12em; font-size: .67rem; margin-bottom: 5px; }
+    .mod-info h1 { margin: 0 0 6px; color: var(--blue); font-size: 1.75rem; line-height: 1.15; font-weight: 700; }
+    .mod-info .meta { color: var(--muted); font-size: .85rem; font-weight: 600; margin-bottom: 10px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip { background: var(--soft); border: 1px solid var(--line); border-radius: 4px; padding: 5px 11px; display: flex; gap: 6px; align-items: center; }
+    .chip b { color: var(--blue); font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; }
+    .chip span { font-weight: 600; font-size: .85rem; }
+    .section { padding: 20px 26px; border-top: 1px solid var(--line); }
+    h2 { font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin: 0 0 10px; }
+    p { margin: 0 0 10px; } p:last-child { margin-bottom: 0; }
+    .why { border-left: 3px solid var(--blue); background: #f3f7fb; padding: 13px 16px; font-size: .92rem; line-height: 1.65; }
+    .note-green { border-left: 3px solid var(--green); background: #effaf2; padding: 13px 16px; font-size: .92rem; }
+    .note-gold { border-left: 3px solid var(--gold); background: #fdf8ec; padding: 13px 16px; font-size: .92rem; }
+    .lead { font-size: .94rem; margin-bottom: 12px; }
+    .terms { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .term { background: #fafcfe; border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; }
+    .term h4 { margin: 0 0 4px; color: var(--blue); font-size: .9rem; font-weight: 700; }
+    .term p { margin: 0; font-size: .85rem; color: var(--muted); line-height: 1.5; }
+    .todo { list-style: none; margin: 10px 0 0; padding: 0; }
+    .todo li { display: flex; gap: 11px; padding: 9px 0; border-bottom: 1px solid var(--line); align-items: flex-start; }
+    .todo li:last-child { border-bottom: 0; }
+    .todo .num { flex: 0 0 auto; width: 22px; height: 22px; border-radius: 6px; background: var(--blue); color: #fff; font-weight: 700; font-size: .72rem; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+    .todo span:not(.num) { font-size: .88rem; line-height: 1.5; }
+    .cta { display: flex; align-items: stretch; }
+    .cta-bar { width: 6px; background: var(--green); flex-shrink: 0; }
+    .cta-inner { padding: 18px 26px; background: #effaf2; flex: 1; }
+    .cta-inner h3 { margin: 0 0 6px; color: var(--blue); font-size: 1.05rem; font-weight: 700; }
+    .cta-inner p { margin: 0; font-size: .92rem; }
+    .footer { text-align: center; color: var(--muted); font-size: .85rem; margin: 18px 0; }
+    @media (max-width: 720px) { .terms { grid-template-columns: 1fr; } .mod-info h1 { font-size: 1.4rem; } .mod-num .big { font-size: 2.5rem; } .mod-hero-inner { gap: 14px; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <nav class="breadcrumb">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      <a href="../../index.html">BIO 153 Course Home</a>
+      <span>&rsaquo;</span>
+      <span>Lab 1 Overview</span>
+    </nav>
+    <main class="doc">
+
+      <div class="mod-hero">
+        <div class="mod-hero-bar"></div>
+        <div class="mod-hero-inner">
+          <div class="mod-num">
+            <div class="big">01</div>
+            <div class="lbl">lab</div>
+          </div>
+          <div class="mod-info">
+            <div class="eyebrow">Lab 01 &middot; BIO 153 Principles of Biology II &middot; Summer 2026</div>
+            <h1>Evidence of Evolution: Phylogeny &amp; Cladistics</h1>
+            <div class="meta">Virtual lab &middot; McGraw Hill Connect</div>
+            <div class="chips">
+              <div class="chip"><b>Points</b><span>40</span></div>
+              <div class="chip"><b>Est. Time</b><span>30&ndash;40 min</span></div>
+              <div class="chip"><b>Platform</b><span>McGraw Hill Connect</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section">
+        <h2>What You Need to Complete</h2>
+        <div class="why">
+          <p>This lab is completed through <strong>McGraw Hill Connect</strong>. You will complete the virtual lab titled <strong>Evidence of Evolution: Phylogeny and Cladistics</strong>.</p>
+          <p>Your score comes from the completed McGraw Hill virtual lab. Finish the activity and submit it inside McGraw Hill, then return to Blackboard and confirm the assignment shows as completed.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Why This Lab Matters</h2>
+        <p class="lead">Biology is not just about naming organisms &mdash; it is about explaining how organisms are related. In this lab you will examine several kinds of evidence biologists use to study evolution: fossils, body structures, biochemical similarities, and evolutionary trees.</p>
+        <div class="why">
+          <p style="margin:0;">The main question: <strong>How do scientists decide whether similarity points to shared ancestry?</strong></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>The Big Idea &mdash; Same Basic Bones, Different Shapes</h2>
+        <p>One of the most important ideas in this lab is that different animals may have the <strong>same basic skeletal parts</strong>, even when those parts look very different.</p>
+        <p>A human arm, cat foreleg, whale flipper, and bat wing all share the same general forelimb pattern: an upper arm bone, forearm bones, wrist bones, hand bones, and finger bones. The exact shape, size, and function differ greatly, but the underlying pattern is shared.</p>
+        <p>You do not need to memorize the exact shape of every carpal, metacarpal, or phalanx. Focus on the pattern: <strong>the same basic bones are present, but they have been modified for different functions.</strong> A bat wing is a modified vertebrate forelimb with greatly elongated fingers supporting a membrane; a whale flipper is the same forelimb shaped for swimming. That shared origin is why these structures are homologous.</p>
+      </section>
+
+      <section class="section">
+        <h2>Important Distinction &mdash; Homology vs. Analogy</h2>
+        <div class="note-gold">
+          <p><strong>Homologous structures</strong> share a common evolutionary origin, even if they now perform different jobs. A human arm, cat foreleg, whale flipper, and bat wing are homologous because they follow the same underlying forelimb pattern.</p>
+          <p><strong>Analogous structures</strong> perform similar jobs but do not come from the same ancestral structure. Bird wings and insect wings both allow flight, but they are not built from the same ancestral body part.</p>
+          <p style="margin-bottom:0;">So the better question is not &ldquo;Do these structures look alike?&rdquo; but <strong>Did these structures come from the same ancestral structure, or did they evolve similar functions separately?</strong></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Background &mdash; Connection to Darwin</h2>
+        <p>Darwin argued that living organisms change over time and that related organisms share common ancestry. Before modern DNA sequencing, scientists relied heavily on fossils, anatomy, development, geography, and observation.</p>
+        <p>Comparative anatomy was especially important. When scientists saw the same basic bone pattern repeated across vertebrate forelimbs, they read that pattern as evidence those animals inherited the structure from a shared ancestor. This lab connects directly to that tradition.</p>
+      </section>
+
+      <section class="section">
+        <h2>What Molecular Evidence Adds</h2>
+        <p>Today, biologists can also compare molecules such as DNA, RNA, and proteins. Very similar sequences may suggest a more recent common ancestor; more different molecules may suggest a more distant relationship.</p>
+        <p>Molecular evidence does not replace fossils and anatomy &mdash; it adds another independent line. The strongest evolutionary explanations come from multiple sources pointing in the same direction.</p>
+      </section>
+
+      <section class="section">
+        <h2>Key Terms for This Lab</h2>
+        <div class="terms">
+          <div class="term"><h4>Evolution</h4><p>Change in inherited traits in populations over generations.</p></div>
+          <div class="term"><h4>Common Ancestor</h4><p>An earlier organism or population from which later groups descend.</p></div>
+          <div class="term"><h4>Homologous Structures</h4><p>Structures with a shared evolutionary origin, even if shapes or functions differ today.</p></div>
+          <div class="term"><h4>Analogous Structures</h4><p>Structures with similar functions that did not come from the same ancestral structure.</p></div>
+          <div class="term"><h4>Convergent Evolution</h4><p>Evolution of similar traits in different lineages facing similar pressures.</p></div>
+          <div class="term"><h4>Fossil</h4><p>Preserved evidence of past life, used to study organisms that lived long ago.</p></div>
+          <div class="term"><h4>Phylogeny</h4><p>The evolutionary history or relationships of an organism or group.</p></div>
+          <div class="term"><h4>Phylogenetic Tree</h4><p>A diagram showing a hypothesis about evolutionary relationships.</p></div>
+          <div class="term"><h4>Cladogram</h4><p>A branching diagram showing relationships based on shared traits.</p></div>
+          <div class="term"><h4>Node</h4><p>A branch point representing a common ancestor where lineages split.</p></div>
+          <div class="term"><h4>Character</h4><p>A trait that can be compared among organisms &mdash; a bone, structure, protein, or molecular feature.</p></div>
+          <div class="term"><h4>Molecular Evidence</h4><p>Evidence based on molecules such as DNA, RNA, proteins, or biochemical similarities.</p></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Reading Trees &mdash; A Quick Reminder</h2>
+        <div class="note-gold">
+          <p>When reading a phylogenetic tree or cladogram, do not focus only on which organisms sit beside each other on the page &mdash; look for the most recent common ancestor.</p>
+          <p style="margin-bottom:0;">Two organisms are more closely related if they share a more recent common ancestor. Branches can be rotated around nodes without changing meaning: the branching pattern matters more than left-right position.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Lab Workflow</h2>
+        <ul class="todo">
+          <li><span class="num">1</span><span>Read this page first so the McGraw Hill activity makes more sense before you begin.</span></li>
+          <li><span class="num">2</span><span>Open McGraw Hill Connect and the assignment titled <strong>Evidence of Evolution: Phylogeny and Cladistics</strong>.</span></li>
+          <li><span class="num">3</span><span>Work through the virtual lab &mdash; read the Key Concepts, Overview, and Before You Begin sections, then complete the simulation carefully.</span></li>
+          <li><span class="num">4</span><span>Submit in McGraw Hill. Finish the activity completely and look for the completion or confirmation screen &mdash; do not just close the window.</span></li>
+        </ul>
+      </section>
+
+      <div class="cta">
+        <div class="cta-bar"></div>
+        <div class="cta-inner">
+          <h3>Now Complete the Lab</h3>
+          <p>Open McGraw Hill Connect and complete <strong>Evidence of Evolution: Phylogeny and Cladistics</strong>. Use the definitions and background above as a guide while you work.</p>
+        </div>
+      </div>
+
+    </main>
+    <p class="footer">BIO 153 Principles of Biology II &middot; Summer 2026 &middot; Lab 1 Overview</p>
+  </div>
+</body>
+</html>
