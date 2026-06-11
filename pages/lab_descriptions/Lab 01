@@ -1,0 +1,250 @@
+<div style="font-family: Arial, Helvetica, sans-serif; line-height: 1.55; color: #1f2933; max-width: 980px; margin: 0 auto;">
+
+  <div style="background: linear-gradient(135deg, #0b3d2e, #1f7a4d); color: #ffffff; padding: 26px 30px; border-radius: 16px; margin-bottom: 22px;">
+    <h2 style="margin: 0 0 8px 0; font-size: 28px; color: #ffffff;">Lab 01: Evidence of Evolution — Phylogeny and Cladistics</h2>
+    <p style="margin: 0; font-size: 16px;">
+      How can a human arm, a cat foreleg, a whale flipper, and a bat wing all be built from the same basic plan?
+    </p>
+  </div>
+
+  <div style="background: #ffffff; border: 2px solid #1f7a4d; border-radius: 14px; padding: 18px 22px; margin-bottom: 22px;">
+    <h3 style="margin-top: 0; color: #0b3d2e;">Business First: What You Need to Complete</h3>
+    <p>
+      This lab is completed through McGraw Hill Connect. You will complete the virtual lab titled:
+    </p>
+    <p style="font-size: 18px; margin: 10px 0;">
+      <strong>Evidence of Evolution: Phylogeny and Cladistics</strong>
+    </p>
+    <p>
+      Your score comes from the completed McGraw Hill virtual lab assignment. Make sure you finish the activity and submit it inside McGraw Hill.
+    </p>
+    <p style="margin-bottom: 0;">
+      After submitting, return to Blackboard and make sure the assignment appears completed.
+    </p>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 22px;">
+
+    <div style="flex: 1 1 260px; background: #eef6ff; border-left: 7px solid #2f80ed; padding: 16px 18px; border-radius: 12px;">
+      <h3 style="margin-top: 0; color: #1b4f8f;">Point Value</h3>
+      <p style="margin-bottom: 0;">
+        This McGraw Hill virtual lab is worth <strong>40 points</strong>.
+      </p>
+    </div>
+
+    <div style="flex: 1 1 260px; background: #f0fff4; border-left: 7px solid #1f7a4d; padding: 16px 18px; border-radius: 12px;">
+      <h3 style="margin-top: 0; color: #0b5d35;">Estimated Time</h3>
+      <p style="margin-bottom: 0;">
+        Plan for about <strong>30–40 minutes</strong>. Some students may finish sooner, but do not rush the tree-reading and evidence questions.
+      </p>
+    </div>
+
+    <div style="flex: 1 1 260px; background: #fffaf0; border-left: 7px solid #c58a1a; padding: 16px 18px; border-radius: 12px;">
+      <h3 style="margin-top: 0; color: #8a5a00;">Submission</h3>
+      <p style="margin-bottom: 0;">
+        Submit the completed activity in McGraw Hill. Look for the completion or confirmation screen before closing the lab.
+      </p>
+    </div>
+
+  </div>
+
+  <div style="background: #ffffff; border: 1px solid #d8e2dc; border-radius: 14px; padding: 18px 22px; margin-bottom: 22px;">
+    <h3 style="margin-top: 0; color: #0b3d2e;">Lab Workflow</h3>
+
+    <div style="background: #f8fafc; border-left: 6px solid #64748b; padding: 14px 18px; border-radius: 10px; margin-bottom: 12px;">
+      <h4 style="margin-top: 0; color: #334155;">Step 1 — Read This Page First</h4>
+      <p style="margin-bottom: 0;">
+        Review the background below so the McGraw Hill activity makes more sense before you begin.
+      </p>
+    </div>
+
+    <div style="background: #eef6ff; border-left: 6px solid #2f80ed; padding: 14px 18px; border-radius: 10px; margin-bottom: 12px;">
+      <h4 style="margin-top: 0; color: #1b4f8f;">Step 2 — Open McGraw Hill Connect</h4>
+      <p style="margin-bottom: 0;">
+        Open the assignment titled <strong>Evidence of Evolution: Phylogeny and Cladistics</strong>.
+      </p>
+    </div>
+
+    <div style="background: #f0fff4; border-left: 6px solid #1f7a4d; padding: 14px 18px; border-radius: 10px; margin-bottom: 12px;">
+      <h4 style="margin-top: 0; color: #0b5d35;">Step 3 — Work Through the Virtual Lab</h4>
+      <p style="margin-bottom: 0;">
+        Read the Key Concepts, Overview, and Before You Begin sections. Then complete the simulation carefully.
+      </p>
+    </div>
+
+    <div style="background: #fffaf0; border-left: 6px solid #c58a1a; padding: 14px 18px; border-radius: 10px;">
+      <h4 style="margin-top: 0; color: #8a5a00;">Step 4 — Submit in McGraw Hill</h4>
+      <p style="margin-bottom: 0;">
+        Finish the activity completely and submit it for credit. Do not just close the browser window.
+      </p>
+    </div>
+  </div>
+
+  <div style="background: #f3f7f4; border-left: 7px solid #1f7a4d; padding: 18px 22px; border-radius: 12px; margin-bottom: 22px;">
+    <h3 style="margin-top: 0; color: #0b3d2e;">Why This Lab Matters</h3>
+    <p>
+      Biology is not just about naming organisms. It is also about explaining how organisms are related.
+      In this lab, you will look at several kinds of evidence biologists use to study evolution: fossils, body structures, biochemical similarities, and evolutionary trees.
+    </p>
+    <p style="margin-bottom: 0;">
+      The main question is: <strong>How do scientists decide whether similarity points to shared ancestry?</strong>
+    </p>
+  </div>
+
+  <div style="background: #eef6ff; border-left: 7px solid #2f80ed; padding: 18px 22px; border-radius: 12px; margin-bottom: 22px;">
+    <h3 style="margin-top: 0; color: #1b4f8f;">The Big Idea: Same Basic Bones, Different Shapes</h3>
+    <p>
+      One of the most important ideas in this lab is that different animals may have the <strong>same basic skeletal parts</strong>,
+      even when those parts look very different.
+    </p>
+    <p>
+      A human arm, cat foreleg, whale flipper, and bat wing all include the same general pattern of forelimb bones:
+      an upper arm bone, forearm bones, wrist bones, hand bones, and finger bones. The exact shape, size, and function of those bones may differ greatly,
+      but the overall pattern is shared.
+    </p>
+    <p>
+      That is the point. You do not need to memorize the exact shape of every carpal, metacarpal, or phalanx in a diagram.
+      Instead, focus on the pattern: <strong>the same basic bones are present, but they have been modified for different functions.</strong>
+    </p>
+    <p style="margin-bottom: 0;">
+      A bat wing is not built from a completely new set of bones. It is a modified vertebrate forelimb. The fingers are greatly elongated and support the wing membrane.
+      A whale flipper is also a modified vertebrate forelimb, but it is shaped for swimming. This is why these structures are considered homologous.
+    </p>
+  </div>
+
+  <div style="background: #fff1f2; border-left: 8px solid #be123c; padding: 18px 22px; border-radius: 12px; margin-bottom: 22px;">
+    <h3 style="margin-top: 0; color: #9f1239;">Important Distinction: Homology vs. Analogy</h3>
+    <p>
+      <strong>Homologous structures</strong> share a common evolutionary origin, even if they now perform different jobs.
+      A human arm, cat foreleg, whale flipper, and bat wing are homologous because they follow the same underlying forelimb pattern.
+    </p>
+    <p>
+      <strong>Analogous structures</strong> may perform similar jobs but do not come from the same ancestral structure.
+      For example, bird wings and insect wings both allow flight, but they are not built from the same ancestral body part.
+    </p>
+    <p style="margin-bottom: 0;">
+      So the key question is not just, “Do these structures look alike?” The better question is:
+      <strong>Did these structures come from the same ancestral structure, or did they evolve similar functions separately?</strong>
+    </p>
+  </div>
+
+  <div style="background: #ffffff; border: 1px solid #d8e2dc; border-radius: 14px; padding: 18px 22px; margin-bottom: 22px;">
+    <h3 style="margin-top: 0; color: #0b3d2e;">Connection to Darwin</h3>
+    <p>
+      Darwin argued that living organisms change over time and that related organisms share common ancestry.
+      Before modern DNA sequencing existed, scientists relied heavily on evidence from fossils, anatomy, development, geography, and observation.
+    </p>
+    <p>
+      Comparative anatomy was especially important. When scientists saw the same basic bone pattern repeated in different vertebrate forelimbs,
+      they interpreted that pattern as evidence that those animals inherited the structure from a shared ancestor.
+    </p>
+    <p style="margin-bottom: 0;">
+      This lab connects directly to that tradition. You will be looking at the kinds of evidence that helped biologists build the case for evolution
+      before molecular biology existed.
+    </p>
+  </div>
+
+  <div style="background: #f8fafc; border-left: 7px solid #64748b; padding: 18px 22px; border-radius: 12px; margin-bottom: 22px;">
+    <h3 style="margin-top: 0; color: #334155;">What Molecular Evidence Adds</h3>
+    <p>
+      Today, biologists can also compare molecules such as DNA, RNA, and proteins. Molecular evidence gives scientists another way to test evolutionary relationships.
+    </p>
+    <p>
+      If two organisms have very similar DNA or protein sequences, that may suggest they share a more recent common ancestor.
+      If their molecules are more different, that may suggest a more distant relationship.
+    </p>
+    <p style="margin-bottom: 0;">
+      Molecular evidence does not replace fossils and anatomy. Instead, it adds another line of evidence.
+      Strong evolutionary explanations often come from multiple sources pointing in the same direction.
+    </p>
+  </div>
+
+  <div style="background: #f8fafc; border: 1px solid #d9e2ec; border-radius: 14px; padding: 18px 22px; margin-bottom: 22px;">
+    <h3 style="margin-top: 0; color: #334155;">Key Terms for This Lab</h3>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+
+      <div style="flex: 1 1 240px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px;">
+        <h4 style="margin-top: 0; color: #0b3d2e;">Evolution</h4>
+        <p style="margin-bottom: 0;">Change in inherited traits in populations over generations.</p>
+      </div>
+
+      <div style="flex: 1 1 240px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px;">
+        <h4 style="margin-top: 0; color: #0b3d2e;">Common Ancestor</h4>
+        <p style="margin-bottom: 0;">An earlier organism or population from which later groups are descended.</p>
+      </div>
+
+      <div style="flex: 1 1 240px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px;">
+        <h4 style="margin-top: 0; color: #0b3d2e;">Homologous Structures</h4>
+        <p style="margin-bottom: 0;">Structures that share a common evolutionary origin, even if their shapes or functions are different today.</p>
+      </div>
+
+      <div style="flex: 1 1 240px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px;">
+        <h4 style="margin-top: 0; color: #0b3d2e;">Analogous Structures</h4>
+        <p style="margin-bottom: 0;">Structures with similar functions that did not come from the same ancestral structure.</p>
+      </div>
+
+      <div style="flex: 1 1 240px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px;">
+        <h4 style="margin-top: 0; color: #0b3d2e;">Convergent Evolution</h4>
+        <p style="margin-bottom: 0;">The evolution of similar traits in different lineages because they face similar challenges or selective pressures.</p>
+      </div>
+
+      <div style="flex: 1 1 240px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px;">
+        <h4 style="margin-top: 0; color: #0b3d2e;">Fossil</h4>
+        <p style="margin-bottom: 0;">Preserved evidence of past life. Fossils help scientists study organisms that lived long ago.</p>
+      </div>
+
+      <div style="flex: 1 1 240px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px;">
+        <h4 style="margin-top: 0; color: #0b3d2e;">Phylogeny</h4>
+        <p style="margin-bottom: 0;">The evolutionary history or relationship of an organism or group of organisms.</p>
+      </div>
+
+      <div style="flex: 1 1 240px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px;">
+        <h4 style="margin-top: 0; color: #0b3d2e;">Phylogenetic Tree</h4>
+        <p style="margin-bottom: 0;">A diagram that shows a hypothesis about evolutionary relationships.</p>
+      </div>
+
+      <div style="flex: 1 1 240px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px;">
+        <h4 style="margin-top: 0; color: #0b3d2e;">Cladogram</h4>
+        <p style="margin-bottom: 0;">A branching diagram that shows relationships based on shared traits.</p>
+      </div>
+
+      <div style="flex: 1 1 240px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px;">
+        <h4 style="margin-top: 0; color: #0b3d2e;">Node</h4>
+        <p style="margin-bottom: 0;">A branch point on a tree. A node represents a common ancestor where lineages split.</p>
+      </div>
+
+      <div style="flex: 1 1 240px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px;">
+        <h4 style="margin-top: 0; color: #0b3d2e;">Character</h4>
+        <p style="margin-bottom: 0;">A trait or feature that can be compared among organisms, such as a bone, body structure, protein, or molecular feature.</p>
+      </div>
+
+      <div style="flex: 1 1 240px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px;">
+        <h4 style="margin-top: 0; color: #0b3d2e;">Molecular Evidence</h4>
+        <p style="margin-bottom: 0;">Evidence based on molecules such as DNA, RNA, proteins, or biochemical similarities.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="background: #fffaf0; border-left: 7px solid #c58a1a; padding: 18px 22px; border-radius: 12px; margin-bottom: 22px;">
+    <h3 style="margin-top: 0; color: #8a5a00;">Reading Trees: A Simple Reminder</h3>
+    <p>
+      When reading a phylogenetic tree or cladogram, do not focus only on which organisms are beside each other on the page.
+      Instead, look for the most recent common ancestor.
+    </p>
+    <p style="margin-bottom: 0;">
+      Two organisms are more closely related if they share a more recent common ancestor. Branches can often be rotated around nodes without changing the meaning of the tree.
+      The branching pattern matters more than the exact left-right position.
+    </p>
+  </div>
+
+  <div style="background: #ffffff; border: 2px solid #1f7a4d; border-radius: 14px; padding: 18px 22px;">
+    <h3 style="margin-top: 0; color: #0b3d2e;">Now Complete the Lab</h3>
+    <p style="margin-bottom: 0;">
+      Open McGraw Hill Connect and complete <strong>Evidence of Evolution: Phylogeny and Cladistics</strong>.
+      Use the definitions and background above as a guide while you work.
+    </p>
+  </div>
+
+</div>
