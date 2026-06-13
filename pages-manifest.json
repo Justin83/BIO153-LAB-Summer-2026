@@ -1,0 +1,126 @@
+{
+  "repo": "Justin83/BIO153-LAB-Summer-2026",
+  "pagesBase": "https://justin83.github.io/BIO153-LAB-Summer-2026",
+  "pages": [
+    {
+      "name": "Course Home",
+      "path": "index.html",
+      "version": "1.0",
+      "module": null,
+      "category": "course-home",
+      "data": "static",
+      "status": "ready",
+      "description": "Internal index page \u2014 not for Blackboard"
+    },
+    {
+      "name": "Course Outline",
+      "path": "pages/course-outline/course-outline.html",
+      "version": "1.0",
+      "module": null,
+      "category": "course-outline",
+      "data": "static",
+      "status": "ready",
+      "description": "Course outline and master schedule"
+    },
+    {
+      "name": "Daily Course Schedule",
+      "path": "pages/course-outline/course-outline-daily.html",
+      "version": "1.0",
+      "module": null,
+      "category": "course-outline",
+      "data": "static",
+      "status": "ready",
+      "description": "Full semester daily schedule"
+    },
+    {
+      "name": "Syllabus (Clean)",
+      "path": "pages/syllabus/syllabus-clean-logo-layout-lite.html",
+      "version": "1.0",
+      "module": null,
+      "category": "syllabus",
+      "data": "static",
+      "status": "ready",
+      "description": "Clean lite syllabus layout with logo"
+    },
+    {
+      "name": "Syllabus",
+      "path": "pages/syllabus/syllabus.html",
+      "version": "1.0",
+      "module": null,
+      "category": "syllabus",
+      "data": "static",
+      "status": "ready",
+      "description": "Full course syllabus"
+    },
+    {
+      "name": "Lab 1: Evidence of Evolution",
+      "path": "pages/lab_instructions/Lab_01.html",
+      "version": "1.0",
+      "module": 1,
+      "category": "lab-instructions",
+      "data": "static",
+      "status": "ready",
+      "description": "Evidence of Evolution: Phylogeny & Cladistics"
+    },
+    {
+      "name": "Module 1 Overview",
+      "path": "pages/modules/module-1.html",
+      "version": "1.0",
+      "module": 1,
+      "category": "module-overview",
+      "data": "static",
+      "status": "ready",
+      "description": "Module 1 overview page (title TBD)"
+    },
+    {
+      "name": "Module 2 Overview",
+      "path": "pages/modules/module-2.html",
+      "version": "1.0",
+      "module": 2,
+      "category": "module-overview",
+      "data": "static",
+      "status": "ready",
+      "description": "Module 2 overview page (title TBD)"
+    },
+    {
+      "name": "Module 3 Overview",
+      "path": "pages/modules/module-3.html",
+      "version": "1.0",
+      "module": 3,
+      "category": "module-overview",
+      "data": "static",
+      "status": "ready",
+      "description": "Module 3 overview page (title TBD)"
+    },
+    {
+      "name": "Module 4 Overview",
+      "path": "pages/modules/module-4.html",
+      "version": "1.0",
+      "module": 4,
+      "category": "module-overview",
+      "data": "static",
+      "status": "ready",
+      "description": "Module 4 overview page (title TBD)"
+    },
+    {
+      "name": "Final Review & Exams",
+      "path": "pages/modules/module-final.html",
+      "version": "1.0",
+      "module": null,
+      "category": "module-overview",
+      "data": "static",
+      "status": "ready",
+      "description": "Review for Final & Final Exams overview page"
+    },
+    {
+      "name": "Asset Test",
+      "path": "pages/test/asset-test.html",
+      "version": "1.0",
+      "module": null,
+      "category": "test",
+      "data": "static",
+      "status": "draft",
+      "description": "Internal asset/style test page \u2014 not for Blackboard"
+    }
+  ]
+}
