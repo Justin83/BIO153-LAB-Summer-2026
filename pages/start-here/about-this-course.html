@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About This Course — BIO 153: Principles of Biology Laboratory II</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #00695c;
+      --accent-light: #e0f2f1;
+      --gold: #c69214;
+      --ink: #1a2d2a;
+      --muted: #4a6060;
+      --line: #b2dfdb;
+      --paper: #ffffff;
+      --soft: #f0faf9;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #eaf4f3;
+      color: var(--ink);
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.62;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page { max-width: 1000px; margin: auto; padding: 24px; }
+
+    .doc {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 24px rgba(0, 105, 92, .07);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .titlebar {
+      display: flex;
+      align-items: stretch;
+      border-bottom: 1px solid var(--line);
+      background: #ffffff;
+    }
+
+    .titlebar-accent { width: 6px; background: var(--accent); flex-shrink: 0; }
+    .titlebar-content { padding: 20px 26px; flex: 1; }
+
+    .eyebrow {
+      color: var(--gold);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: .67rem;
+      margin-bottom: 5px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      color: var(--accent);
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 1.15;
+    }
+
+    .meta { color: var(--muted); font-size: .88rem; font-weight: 600; }
+
+    .section { padding: 22px 30px; border-top: 1px solid var(--line); }
+    .section:first-of-type { border-top: none; }
+
+    h2 {
+      font-size: .65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--muted);
+      margin: 0 0 10px;
+    }
+
+    h3 { color: var(--accent); margin: 16px 0 8px; font-size: 1.05rem; }
+
+    p { margin: 0 0 12px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul { margin: 8px 0 0 1.25rem; padding: 0; }
+    li { margin: 7px 0; }
+
+    .callout {
+      border-left: 6px solid var(--accent);
+      background: var(--accent-light);
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin-top: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .card {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+    }
+
+    .card b { display: block; color: var(--accent); margin-bottom: 4px; }
+
+    .flow {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      max-width: 430px;
+      margin: 8px auto 2px;
+      text-align: center;
+    }
+
+    .flowbox {
+      background: var(--accent);
+      color: #fff;
+      border-radius: 16px;
+      padding: 18px;
+      font-weight: 900;
+      font-size: 1.25rem;
+    }
+
+    .flowarrow { color: var(--accent); font-size: 1.55rem; font-weight: 900; line-height: 1; }
+
+    .module-map {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .module-label {
+      background: var(--accent);
+      color: #fff;
+      border-radius: 16px;
+      padding: 28px 14px;
+      text-align: center;
+      font-weight: 900;
+      font-size: 1.35rem;
+    }
+
+    .module-stack { display: grid; gap: 9px; }
+
+    .module-item {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--accent);
+      border-radius: 10px;
+      padding: 10px 12px;
+    }
+
+    .module-item b { color: var(--accent); }
+
+    .note {
+      background: #fff8e5;
+      border-left: 6px solid var(--gold);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-top: 14px;
+      font-size: .95rem;
+    }
+
+    .footer { text-align: center; color: var(--muted); font-size: .9rem; margin: 20px 0; }
+
+    @media (max-width: 720px) {
+      .page { padding: 14px; }
+      .grid, .module-map { grid-template-columns: 1fr; }
+      h1 { font-size: 1.5rem; }
+      .section { padding: 20px; }
+      .module-label { padding: 18px 14px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <main class="doc">
+      <header class="titlebar">
+        <div class="titlebar-accent"></div>
+        <div class="titlebar-content">
+          <div class="eyebrow">Start Here &middot; BIO 153 Summer 2026</div>
+          <h1>About This Course</h1>
+          <div class="meta">Course navigation, lab organization, tools, and communication</div>
+        </div>
+      </header>
+
+      <section class="section">
+        <h2>Introduction</h2>
+        <p>Welcome to BIO 153: Principles of Biology Laboratory II. This online lab course emphasizes organismal, population, and community biology through virtual labs, histology activities, organismal diversity exercises, and dissection activities. It is the companion lab course to BIO 152 and requires BIO 152 as a prerequisite or concurrent enrollment.</p>
+        <p>In this section, you will learn how the course is organized, how to navigate Blackboard, how to access Connect virtual labs, and how to reach me.</p>
+
+        <div class="callout">
+          <p><strong>Why it matters:</strong> Lab courses reinforce lecture concepts through hands-on (virtual) practice. Understanding how to navigate and submit your lab work correctly is essential from the start.</p>
+          <p><strong>How you will use this:</strong> You will use this information to locate and submit lab assignments on time, every week.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Course at a Glance</h2>
+        <div class="grid">
+          <div class="card">
+            <b>Course</b>
+            BIO 153 &mdash; Principles of Biology Laboratory II
+          </div>
+          <div class="card">
+            <b>Term</b>
+            Summer 2026 &middot; June 15 &ndash; August 7, 2026
+          </div>
+          <div class="card">
+            <b>Section / Class #</b>
+            Section E0Z1 &middot; Class #2806
+          </div>
+          <div class="card">
+            <b>Delivery</b>
+            Online &middot; 2 Credit Hours &middot; 4 Lab Hours
+          </div>
+          <div class="card">
+            <b>Instructor</b>
+            Justin Howard &middot; justin.howard@kctcs.edu
+          </div>
+          <div class="card">
+            <b>Prerequisite</b>
+            BIO 152 or concurrent enrollment
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Course Navigation Dashboard</h2>
+        <p>At the top of the page in Blackboard, you will see the course navigation dashboard. Use this area to move between the major tools and sections of the course.</p>
+
+        <div class="grid">
+          <div class="card">
+            <b>Content</b>
+            Find lab instructions, module pages, assignments, and resources.
+          </div>
+          <div class="card">
+            <b>Calendar</b>
+            View lab due dates and upcoming deadlines.
+          </div>
+          <div class="card">
+            <b>Gradebook</b>
+            View your lab grades and access feedback for completed assignments.
+          </div>
+          <div class="card">
+            <b>Messages</b>
+            Use Blackboard Messages to contact me. This is the primary communication method for the course.
+          </div>
+          <div class="card">
+            <b>Microsoft Teams</b>
+            Access live video conferencing and screen sharing when you need help with a lab activity or course tool.
+          </div>
+          <div class="card">
+            <b>Books &amp; Tools</b>
+            Access McGraw Hill Connect and other integrated course tools.
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Course Organization</h2>
+        <p>This lab course is organized into weekly modules that run parallel to BIO 152. Most weeks include one or more virtual lab assignments, histology activities, or dissection exercises, all completed through McGraw Hill Connect.</p>
+
+        <div class="flow" aria-label="Course organization flow">
+          <div class="flowbox">Start Here</div>
+          <div class="flowarrow">&#8595;</div>
+          <div class="flowbox">Weekly Lab Modules (W1 &ndash; W7)</div>
+          <div class="flowarrow">&#8595;</div>
+          <div class="flowbox">Final Week</div>
+        </div>
+
+        <div class="note">
+          <strong>Note:</strong> Some weeks may have more assignments than others based on available lab content. Week 5 has no graded lab assignments in this term. See the Course Outline for the complete weekly breakdown.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Weekly Lab Schedule</h2>
+        <p>The following is a summary of lab assignments by week. Point values marked TBD will be confirmed in Blackboard and Connect.</p>
+
+        <div class="module-map">
+          <div class="module-label">Lab Weeks</div>
+          <div class="module-stack">
+            <div class="module-item"><b>Week 1</b> (due June 23) &mdash; vLab: Evidence of Evolution &mdash; Phylogeny and Cladistics</div>
+            <div class="module-item"><b>Week 2</b> (due June 30) &mdash; Histology: Epithelial, Connective, Muscle &amp; Nervous Tissue; Exercise 41</div>
+            <div class="module-item"><b>Week 3</b> (due July 7) &mdash; Organismal Diversity: Sponges &amp; Cnidarians; Exercise 36</div>
+            <div class="module-item"><b>Week 4</b> (due July 14) &mdash; Fetal Pig Dissections (Parts 1 &amp; 2); Exercises 37, 38, 39, 40</div>
+            <div class="module-item"><b>Week 5</b> &mdash; No graded lab assignments this week</div>
+            <div class="module-item"><b>Week 6</b> (due July 28) &mdash; Organismal Diversity: Protists</div>
+            <div class="module-item"><b>Week 7</b> (due Aug 4) &mdash; Organismal Diversity: Fungi</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Submitting Lab Work</h2>
+        <p>Most lab assignments are completed through McGraw Hill Connect, accessed from within Blackboard. <strong>Always start and finish each lab session from Blackboard</strong> so that your grades transfer correctly to the Blackboard Gradebook.</p>
+        <p>For virtual labs and dissection activities, follow all on-screen instructions within Connect. If you encounter a technical issue, contact McGraw Hill Connect support and notify me via Blackboard Messages.</p>
+      </section>
+
+      <section class="section">
+        <h2>Course Tools</h2>
+        <div class="grid">
+          <div class="card">
+            <b>Blackboard Messages</b>
+            Primary communication method for all course questions, grade concerns, and personal matters.
+          </div>
+          <div class="card">
+            <b>Microsoft Teams</b>
+            Live video conferencing and screen sharing for virtual office hours and live help sessions.
+          </div>
+          <div class="card">
+            <b>McGraw Hill Connect</b>
+            Virtual labs, histology activities, dissection simulations, and organismal diversity exercises.
+          </div>
+          <div class="card">
+            <b>Lab Manual (Digital)</b>
+            Included through Blackboard as part of your tuition and fees.
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Next Step</h2>
+        <div class="callout">
+          <p><strong>Next up, review the course syllabus and course outline.</strong></p>
+        </div>
+      </section>
+    </main>
+    <p class="footer">BIO 153 Principles of Biology Laboratory II &middot; Summer 2026 &middot; About This Course</p>
+  </div>
+</body>
+</html>
