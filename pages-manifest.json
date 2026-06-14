@@ -10,7 +10,17 @@
       "category": "course-home",
       "data": "static",
       "status": "ready",
-      "description": "Internal index page \u2014 not for Blackboard"
+      "description": "Internal index page — not for Blackboard"
+    },
+    {
+      "name": "About This Course",
+      "path": "pages/start-here/about-this-course.html",
+      "version": "1.0",
+      "module": null,
+      "category": "start-here",
+      "data": "static",
+      "status": "ready",
+      "description": "Course intro page for the Start Here module"
     },
     {
       "name": "Course Outline",
@@ -63,54 +73,54 @@
       "description": "Evidence of Evolution: Phylogeny & Cladistics"
     },
     {
-      "name": "Module 1 Overview",
+      "name": "Week 1 Lab Overview",
       "path": "pages/modules/module-1.html",
       "version": "1.0",
       "module": 1,
       "category": "module-overview",
       "data": "static",
       "status": "ready",
-      "description": "Module 1 overview page (title TBD)"
+      "description": "Week 1: Evidence of Evolution — vLab Phylogeny & Cladistics (due June 23)"
     },
     {
-      "name": "Module 2 Overview",
+      "name": "Week 2 Lab Overview",
       "path": "pages/modules/module-2.html",
       "version": "1.0",
       "module": 2,
       "category": "module-overview",
       "data": "static",
       "status": "ready",
-      "description": "Module 2 overview page (title TBD)"
+      "description": "Week 2: Tissue Histology — Epithelial, Connective, Muscle, Nervous + Exercise 41 (due June 30)"
     },
     {
-      "name": "Module 3 Overview",
+      "name": "Week 3 Lab Overview",
       "path": "pages/modules/module-3.html",
       "version": "1.0",
       "module": 3,
       "category": "module-overview",
       "data": "static",
       "status": "ready",
-      "description": "Module 3 overview page (title TBD)"
+      "description": "Week 3: Sponges & Cnidarians + Exercise 36 (due July 7)"
     },
     {
-      "name": "Module 4 Overview",
+      "name": "Week 4 Lab Overview",
       "path": "pages/modules/module-4.html",
       "version": "1.0",
       "module": 4,
       "category": "module-overview",
       "data": "static",
       "status": "ready",
-      "description": "Module 4 overview page (title TBD)"
+      "description": "Week 4: Fetal Pig Dissection Parts 1 & 2 + Exercises 37–40 (due July 14)"
     },
     {
-      "name": "Final Review & Exams",
+      "name": "Final Week Lab Overview",
       "path": "pages/modules/module-final.html",
       "version": "1.0",
       "module": null,
       "category": "module-overview",
       "data": "static",
       "status": "ready",
-      "description": "Review for Final & Final Exams overview page"
+      "description": "Weeks 6–7: Protists (due July 28) & Fungi (due Aug 4) — course closes Aug 7"
     },
     {
       "name": "Asset Test",
@@ -120,7 +130,7 @@
       "category": "test",
       "data": "static",
       "status": "draft",
-      "description": "Internal asset/style test page \u2014 not for Blackboard"
+      "description": "Internal asset/style test page — not for Blackboard"
     }
   ]
 }
