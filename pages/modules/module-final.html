@@ -3,121 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BIO 153 Review for Final &amp; Final Exams</title>
+  <title>BIO 153 Final Week Lab Overview — Fungi &amp; Course Wrap-Up</title>
   <style>
     :root {
-      --blue: #08315f; --blue2: #0d4d8c; --gold: #c69214; --ink: #172033;
-      --muted: #5f6f86; --line: #dbe5f1; --paper: #ffffff; --soft: #f5f8fc; --green: #137a39;
+      --accent: #00695c;
+      --gold: #c69214;
+      --ink: #172033;
+      --muted: #5f6f86;
+      --line: #b2dfdb;
+      --paper: #ffffff;
+      --soft: #f0faf9;
+      --green: #00695c;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; background: #e9f0f8; color: var(--ink); font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.58; -webkit-font-smoothing: antialiased; }
+    body {
+      margin: 0;
+      background: #e9f0f8;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.58;
+      -webkit-font-smoothing: antialiased;
+    }
     .page { max-width: 1000px; margin: auto; padding: 24px; }
-    .doc { background: var(--paper); border: 1px solid var(--line); box-shadow: 0 16px 38px rgba(15,23,42,.08); border-radius: 6px; overflow: hidden; }
+    .doc {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 16px 38px rgba(15, 23, 42, .08);
+      border-radius: 6px;
+      overflow: hidden;
+    }
     .banner { display: block; width: 100%; height: auto; }
     .titlewrap { padding: 22px 30px 6px; }
     .eyebrow { color: var(--gold); font-weight: 800; text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; }
-    .titlewrap h1 { margin: 6px 0 4px; color: var(--blue); font-size: 1.9rem; line-height: 1.1; }
+    .titlewrap h1 { margin: 6px 0 4px; color: var(--accent); font-size: 1.9rem; line-height: 1.1; }
     .titlewrap .meta { color: var(--muted); font-weight: 700; }
     .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
-    .chip { background: #eaf1fb; border: 1px solid var(--line); border-radius: 12px; padding: 9px 14px; }
-    .chip b { color: var(--blue); display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; }
+    .chip { background: #e0f2f1; border: 1px solid var(--line); border-radius: 12px; padding: 9px 14px; }
+    .chip b { color: var(--accent); display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; }
     .chip span { font-weight: 700; }
     .section { padding: 22px 30px; border-top: 1px solid var(--line); }
-    h2 { color: var(--blue); font-size: 1.32rem; margin: 0 0 12px; padding-left: 12px; border-left: 5px solid var(--gold); }
+    h2 { color: var(--accent); font-size: 1.32rem; margin: 0 0 12px; padding-left: 12px; border-left: 5px solid var(--gold); }
     p { margin: 0 0 12px; } p:last-child { margin-bottom: 0; }
     .why { border-left: 6px solid var(--gold); background: #fff8e5; border-radius: 8px; padding: 16px 18px; }
-    .dates { border-left: 6px solid var(--green); background: #effaf2; border-radius: 8px; padding: 16px 18px; }
-    .dates .lbl { display: block; color: var(--blue); font-weight: 900; margin-bottom: 6px; }
-    .dates ul { margin: 0; padding-left: 20px; }
-    .dates li { margin: 4px 0; }
-    .ecards { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; }
-    .ecard { background: var(--soft); border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
-    .ecard h3 { margin: 0 0 4px; color: var(--blue); font-size: 1.05rem; }
-    .ecard .big { font-size: 1.6rem; font-weight: 900; color: var(--blue); }
-    .ecard .big small { font-size: .8rem; font-weight: 700; color: var(--muted); }
-    .ecard ul { margin: 8px 0 0; padding-left: 18px; font-size: .9rem; }
-    .ecard li { margin: 4px 0; }
+    .callout { border-left: 6px solid var(--accent); background: #e0f2f1; border-radius: 8px; padding: 16px 18px; margin-top: 14px; }
+    .asgn-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: .95rem; }
+    .asgn-table th { background: var(--accent); color: #fff; text-align: left; padding: 10px 12px; font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+    .asgn-table td { padding: 10px 12px; border-bottom: 1px solid var(--line); }
+    .asgn-table tr:last-child td { border-bottom: 0; }
+    .asgn-table tr:nth-child(even) td { background: var(--soft); }
     .todo { list-style: none; margin: 8px 0 0; padding: 0; }
     .todo li { display: flex; gap: 11px; padding: 10px 0; border-bottom: 1px solid var(--line); }
     .todo li:last-child { border-bottom: 0; }
     .todo .ck { flex: 0 0 auto; width: 22px; height: 22px; border-radius: 999px; background: var(--green); color: #fff; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
     .todo .ck svg { width: 13px; height: 13px; }
     .footer { text-align: center; color: var(--muted); font-size: .9rem; margin: 20px 0; }
-    @media (max-width: 720px) { .ecards { grid-template-columns: 1fr; } .titlewrap h1 { font-size: 1.5rem; } }
+    @media (max-width: 720px) {
+      .titlewrap h1 { font-size: 1.5rem; }
+      .section { padding: 20px; }
+    }
   </style>
 </head>
 <body>
   <div class="page">
     <main class="doc">
+
       <img class="banner" src="../assets/Module%20Overview.png" alt="Module Overview — Somerset Community College">
+
       <div class="titlewrap">
-        <div class="eyebrow">Final Module · BIO 153 Summer 2026</div>
-        <h1>Review for Final Lab Exam</h1>
-        <div class="meta">Comprehensive lab review and final lab exam · [Dates — To Be Added]</div>
+        <div class="eyebrow">BIO153 &middot; Final Week &middot; BIO 153 Summer 2026</div>
+        <h1>Final Week: Fungi &amp; Course Wrap-Up</h1>
+        <div class="meta">Week 7 Lab due Aug 4 &middot; Course closes Aug 7, 2026</div>
         <div class="chips">
-          <div class="chip"><b>Final Review Quizzes</b><span>[points — to be added]</span></div>
-          <div class="chip"><b>Final Lab Exam</b><span>[points — to be added]</span></div>
+          <div class="chip"><b>Week 7 Due</b><span>Aug 4</span></div>
+          <div class="chip"><b>Course Closes</b><span>Aug 7</span></div>
+          <div class="chip"><b>Platform</b><span>Connect</span></div>
         </div>
       </div>
 
       <section class="section">
-        <h2>Why It Matters</h2>
+        <h2>Overview</h2>
         <div class="why">
-          <p>You've made it to the final stretch! This module pulls together all of the lab work you have completed this semester. The comprehensive final lab exam is your opportunity to demonstrate how much you have learned.</p>
-          <p>The final review quizzes are designed to help you revisit each module and prepare with confidence. Work through them carefully, revisit the lab exercises where you feel less sure, and reach out if you have questions. Finish strong!</p>
+          <p>The final stretch of BIO 153 wraps up organismal diversity with a look at fungi and protists. These groups round out your survey of the kingdoms of life and connect back to the ecology topics covered in BIO 152 Weeks 6 and 7. Use this time to complete all remaining lab work and confirm your grades before the course closes.</p>
         </div>
       </section>
 
       <section class="section">
-        <h2>What's in This Module</h2>
-        <div class="ecards">
-          <div class="ecard">
-            <h3>Final Review Quizzes</h3>
-            <div class="big">— <small>pts total</small></div>
-            <!-- TODO: add BIO 153 final review quiz details -->
-            <ul><li>[Details — to be added]</li></ul>
-          </div>
-          <div class="ecard">
-            <h3>Final Lab Exam</h3>
-            <div class="big">— <small>pts</small></div>
-            <!-- TODO: add BIO 153 final lab exam details -->
-            <ul><li>[Details — to be added]</li></ul>
-          </div>
-        </div>
-        <p style="margin-top:14px;"><!-- TODO: add BIO 153 final exam point total note -->[Total points note — to be added]</p>
+        <h2>Week 6 Lab Assignment (due July 28)</h2>
+        <table class="asgn-table">
+          <thead>
+            <tr><th>Assignment</th><th>Points</th><th>Platform</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Organismal Diversity: Protists</td><td>20</td><td>Connect</td></tr>
+          </tbody>
+        </table>
       </section>
 
       <section class="section">
-        <h2>Key Dates</h2>
-        <div class="dates">
-          <!-- TODO: add BIO 153 final exam dates -->
-          <span class="lbl">All times are eastern time (ET)</span>
-          <ul>
-            <li><strong>Final Review Quizzes</strong> — [date — to be added]</li>
-            <li><strong>Final Exam window opens</strong> — [date — to be added]</li>
-            <li><strong>Final Exam window closes</strong> — [date — to be added]</li>
-          </ul>
-        </div>
+        <h2>Week 7 Lab Assignment (due Aug 4)</h2>
+        <table class="asgn-table">
+          <thead>
+            <tr><th>Assignment</th><th>Points</th><th>Platform</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Organismal Diversity: Fungi</td><td>20</td><td>Connect</td></tr>
+          </tbody>
+        </table>
       </section>
 
       <section class="section">
-        <h2>How to Prepare</h2>
-        <p>Start with the final review quizzes — they are organized by module so you can pinpoint the areas that need the most attention. As you review, return to the lab exercises for any topics you find challenging.</p>
-        <p>Plan your time within the exam window and make sure you have a reliable internet connection before you begin. See the schedule in Blackboard for all official dates and times.</p>
+        <h2>Course Closing Reminders</h2>
+        <div class="callout">
+          <p><strong>Check your grades.</strong> Review the Blackboard Gradebook to confirm all lab assignments are submitted and graded correctly before August 7.</p>
+          <p><strong>Contact your instructor early.</strong> If you have questions or concerns about grades, reach out before the last day of the term via Blackboard Messages.</p>
+          <p><strong>Course end date is August 7, 2026.</strong> No work will be accepted after the course closes.</p>
+        </div>
       </section>
 
       <section class="section">
         <img class="banner" src="../assets/To-Do%20List.png" alt="To-Do List — Somerset Community College" style="border:1px solid var(--line); border-radius:8px;">
         <ul class="todo">
-          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span>Complete all Final Review Quizzes to prepare for the comprehensive final lab exam.</span></li>
-          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span>Complete any optional bonus review assignments offered by your instructor.</span></li>
-          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span>Revisit lab exercises for any topics that need more review.</span></li>
-          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span>Take the Final Lab Exam before the window closes.</span></li>
+          <li>
+            <span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span>
+            <span>Complete Organismal Diversity: Protists by July 28.</span>
+          </li>
+          <li>
+            <span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span>
+            <span>Complete Organismal Diversity: Fungi by August 4.</span>
+          </li>
+          <li>
+            <span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span>
+            <span>Confirm all grades appear in the Blackboard Gradebook before August 7.</span>
+          </li>
         </ul>
       </section>
 
     </main>
-    <p class="footer">BIO 153 Human Anatomy &amp; Physiology Lab · Summer 2026 · Review for Final Lab Exam</p>
+    <p class="footer">BIO 153 Principles of Biology Laboratory II &middot; Summer 2026 &middot; Final Week</p>
   </div>
 </body>
 </html>
