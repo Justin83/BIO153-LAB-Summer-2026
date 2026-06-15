@@ -23,6 +23,16 @@
       "description": "Course intro page for the Start Here module"
     },
     {
+      "name": "Meet the Instructor",
+      "path": "pages/meet the instructor/meet.html",
+      "version": "1.0",
+      "module": null,
+      "category": "start-here",
+      "data": "static",
+      "status": "ready",
+      "description": "Instructor contact, communication, grading, and lab course expectations"
+    },
+    {
       "name": "Course Outline",
       "path": "pages/course-outline/course-outline.html",
       "version": "1.0",
