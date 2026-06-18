@@ -3,111 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BIO 153 Evidence of Evolution: Phylogeny and Cladistics</title>
+  <title>BIO 153 Week 1 Lab Overview: Evidence of Evolution</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --blue: #004d40; --blue2: #00695c; --gold: #c69214;
-      --ink: #1a2d45; --muted: #4a6080; --line: #c5d3e0;
-      --paper: #ffffff; --soft: #eef4fb; --green: #137a39;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: #edf2f7; color: var(--ink);
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      line-height: 1.62; -webkit-font-smoothing: antialiased; }
-    .page { max-width: 1000px; margin: auto; padding: 24px; }
-    .doc { background: var(--paper); border: 1px solid var(--line);
-      box-shadow: 0 8px 24px rgba(8,49,95,.07); border-radius: 8px; overflow: hidden; }
-    .mod-hero { display: flex; align-items: stretch; border-bottom: 1px solid var(--line); }
-    .mod-hero-bar { width: 6px; background: var(--blue); flex-shrink: 0; }
-    .mod-hero-inner { padding: 20px 26px; flex: 1; display: flex; gap: 20px; align-items: flex-start; }
-    .mod-num { flex-shrink: 0; text-align: center; min-width: 52px; }
-    .mod-num .big { font-size: 3.2rem; font-weight: 800; color: var(--blue);
-      line-height: 1; letter-spacing: -.04em; }
-    .mod-num .lbl { font-size: .6rem; font-weight: 700; text-transform: uppercase;
-      letter-spacing: .12em; color: #9aafcc; }
-    .mod-info { flex: 1; }
-    .eyebrow { color: var(--gold); font-weight: 700; text-transform: uppercase;
-      letter-spacing: .12em; font-size: .67rem; margin-bottom: 5px; }
-    .mod-info h1 { margin: 0 0 6px; color: var(--blue); font-size: 1.75rem;
-      line-height: 1.15; font-weight: 700; }
-    .mod-info .meta { color: var(--muted); font-size: .85rem; font-weight: 600; margin-bottom: 10px; }
-    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-    .chip { background: var(--soft); border: 1px solid var(--line); border-radius: 4px;
-      padding: 5px 11px; display: flex; gap: 6px; align-items: center; }
-    .chip b { color: var(--blue); font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; }
-    .chip span { font-weight: 600; font-size: .85rem; }
-    .section { padding: 20px 26px; border-top: 1px solid var(--line); }
-    h2 { font-size: .65rem; font-weight: 700; text-transform: uppercase;
-      letter-spacing: .12em; color: var(--muted); margin: 0 0 10px; }
-    p { margin: 0 0 10px; } p:last-child { margin-bottom: 0; }
-    .why { border-left: 3px solid var(--blue); background: #f3f7fb;
-      padding: 13px 16px; font-size: .92rem; line-height: 1.65; }
-    .dates { border-left: 3px solid var(--green); background: #effaf2; padding: 13px 16px; }
-    .dates .lbl { display: block; color: var(--blue); font-weight: 700;
-      margin-bottom: 6px; font-size: .85rem; }
-    .dates ul { margin: 0; padding-left: 18px; font-size: .9rem; }
-    .dates li { margin: 4px 0; }
-    .todo { list-style: none; margin: 10px 0 0; padding: 0; }
-    .todo li { display: flex; gap: 11px; padding: 9px 0;
-      border-bottom: 1px solid var(--line); align-items: flex-start; }
-    .todo li:last-child { border-bottom: 0; }
-    .todo .num { flex: 0 0 auto; width: 22px; height: 22px; border-radius: 6px;
-      background: var(--blue); color: #fff; font-weight: 700; font-size: .72rem;
-      display: flex; align-items: center; justify-content: center; margin-top: 2px; }
-    .todo span:not(.num) { font-size: .88rem; line-height: 1.5; }
-    .todo-note { display: inline-flex; align-items: center; gap: 5px; margin-top: 10px;
-      font-size: .75rem; color: var(--muted); background: #edf2f7;
-      border: 1px solid var(--line); border-radius: 4px; padding: 5px 10px; }
-    .footer { text-align: center; color: var(--muted); font-size: .85rem; margin: 18px 0; }
-    @media (max-width: 720px) {
-      .mod-info h1 { font-size: 1.4rem; }
-      .mod-num .big { font-size: 2.5rem; }
-      .mod-hero-inner { gap: 14px; }
-    }
+    :root{--blue:#004d40;--gold:#c69214;--ink:#1a2d45;--muted:#4a6080;--line:#c5d3e0;--paper:#fff;--soft:#eef4fb;--green:#137a39}*{box-sizing:border-box}body{margin:0;background:#edf2f7;color:var(--ink);font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased}.page{max-width:1000px;margin:auto;padding:24px}.doc{background:var(--paper);border:1px solid var(--line);box-shadow:0 8px 24px rgba(8,49,95,.07);border-radius:8px;overflow:hidden}.mod-hero{display:flex;align-items:stretch;border-bottom:1px solid var(--line)}.mod-hero-bar{width:6px;background:var(--blue);flex-shrink:0}.mod-hero-inner{padding:20px 26px;flex:1;display:flex;gap:20px;align-items:flex-start}.mod-num{flex-shrink:0;text-align:center;min-width:52px}.mod-num .big{font-size:3.2rem;font-weight:800;color:var(--blue);line-height:1;letter-spacing:-.04em}.mod-num .lbl{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:#9aafcc}.mod-info{flex:1}.eyebrow{color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.67rem;margin-bottom:5px}.mod-info h1{margin:0 0 6px;color:var(--blue);font-size:1.75rem;line-height:1.15;font-weight:700}.mod-info .meta{color:var(--muted);font-size:.85rem;font-weight:600;margin-bottom:10px}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:var(--soft);border:1px solid var(--line);border-radius:4px;padding:5px 11px;display:flex;gap:6px;align-items:center}.chip b{color:var(--blue);font-size:.7rem;text-transform:uppercase;letter-spacing:.06em}.chip span{font-weight:600;font-size:.85rem}.section{padding:20px 26px;border-top:1px solid var(--line)}h2{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 10px}p{margin:0 0 10px}p:last-child{margin-bottom:0}.synopsis{border-left:3px solid var(--blue);background:#f3f7fb;padding:13px 16px;font-size:.92rem;line-height:1.65}.dates{border-left:3px solid var(--green);background:#effaf2;padding:13px 16px}.dates .lbl{display:block;color:var(--blue);font-weight:700;margin-bottom:6px;font-size:.85rem}.dates ul{margin:0;padding-left:18px;font-size:.9rem}.dates li{margin:4px 0}.todo{list-style:none;margin:10px 0 0;padding:0}.todo li{display:flex;gap:11px;padding:9px 0;border-bottom:1px solid var(--line);align-items:flex-start}.todo li:last-child{border-bottom:0}.todo .num{flex:0 0 auto;width:22px;height:22px;border-radius:6px;background:var(--blue);color:#fff;font-weight:700;font-size:.72rem;display:flex;align-items:center;justify-content:center;margin-top:2px}.todo span:not(.num){font-size:.88rem;line-height:1.5}.todo-note{display:inline-flex;align-items:center;gap:5px;margin-top:10px;font-size:.75rem;color:var(--muted);background:#edf2f7;border:1px solid var(--line);border-radius:4px;padding:5px 10px}.footer{text-align:center;color:var(--muted);font-size:.85rem;margin:18px 0}@media(max-width:720px){.page{padding:14px}.mod-hero-inner{gap:14px;padding:18px}.mod-info h1{font-size:1.4rem}.mod-num .big{font-size:2.5rem}.section{padding:18px}.chip{padding:4px 8px}}
   </style>
 </head>
 <body>
   <div class="page">
     <main class="doc">
-      <div class="mod-hero">
-        <div class="mod-hero-bar"></div>
-        <div class="mod-hero-inner">
-          <div class="mod-num">
-            <div class="big">W1</div>
-            <div class="lbl">week</div>
-          </div>
-          <div class="mod-info">
-            <div class="eyebrow">Week 1 Lab &middot; BIO 153 Summer 2026</div>
-            <h1>Evidence of Evolution: Phylogeny and Cladistics</h1>
-            <div class="meta">June 15 &ndash; 23, 2026 &middot; Virtual lab: evolutionary evidence and cladogram construction</div>
-            <div class="chips"><div class="chip"><b>Module</b><span>BIO153 Week 1</span></div><div class="chip"><b>Due</b><span>June 23</span></div><div class="chip"><b>Platform</b><span>Connect vLab</span></div></div>
-          </div>
-        </div>
-      </div>
-
-      <section class="section">
-        <h2>Why It Matters</h2>
-        <div class="why"><p>Phylogenetics and cladistics are the tools biologists use to reconstruct evolutionary history. This virtual lab connects directly to the evolution and taxonomy content in BIO&nbsp;152 Week 1 and 2, giving you hands-on practice building and interpreting cladograms based on shared derived characters.</p></div>
-      </section>
-
-      <section class="section">
-        <h2>Key Dates</h2>
-        <div class="dates">
-          <span class="lbl">All times are Eastern Time (ET)</span>
-          <ul>
-            <li><strong>vLab Evidence of Evolution &mdash; Phylogeny and Cladistics (40&nbsp;pts)</strong> &mdash; due Monday, June 23 at 11:59&nbsp;p.m.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Lab To-Do List</h2>
-        <ul class="todo"><li><span class="num">1</span><span>Open the vLab &ldquo;Evidence of Evolution &mdash; Phylogeny and Cladistics&rdquo; in McGraw Hill Connect (accessed from Blackboard).</span></li><li><span class="num">2</span><span>Complete all virtual lab activities and submit for grading (40&nbsp;pts, due June&nbsp;23).</span></li><li><span class="num">3</span><span>Return to Blackboard after submitting to confirm your grade transferred.</span></li></ul>
-        <div class="todo-note"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Check off items in Blackboard &mdash; this is a reference copy.</div>
-      </section>
+      <div class="mod-hero"><div class="mod-hero-bar"></div><div class="mod-hero-inner"><div class="mod-num"><div class="big">W1</div><div class="lbl">week</div></div><div class="mod-info"><div class="eyebrow">Week 1 Lab &middot; BIO 153 Summer 2026</div><h1>Evidence of Evolution: Phylogeny and Cladistics</h1><div class="meta">June 15 &ndash; 23, 2026 &middot; Evolutionary evidence and cladogram construction</div><div class="chips"><div class="chip"><b>Module</b><span>BIO153 Week 1</span></div><div class="chip"><b>Date</b><span>June 23</span></div><div class="chip"><b>Platform</b><span>Connect vLab</span></div></div></div></div></div>
+      <section class="section"><h2>Synopsis</h2><div class="synopsis"><p>This opening lab gives you practice interpreting evolutionary evidence and building cladograms from shared derived characters. The work connects directly to taxonomy and phylogeny in BIO 152 while also setting up the lab-course emphasis on classification, observation, and biological evidence.</p></div></section>
+      <section class="section"><h2>Key Dates</h2><div class="dates"><span class="lbl">Check Blackboard for official availability and submission requirements.</span><ul><li><strong>Evidence of Evolution &mdash; Phylogeny and Cladistics</strong> &mdash; due Tuesday, June 23.</li></ul></div></section>
+      <section class="section"><h2>Lab To-Do List</h2><ul class="todo"><li><span class="num">1</span><span>Open the Evidence of Evolution &mdash; Phylogeny and Cladistics virtual lab in McGraw Hill Connect from Blackboard.</span></li><li><span class="num">2</span><span>Complete the full virtual lab activity and submit it through Connect.</span></li><li><span class="num">3</span><span>Return to Blackboard and confirm the assignment appears as submitted.</span></li><li><span class="num">4</span><span>Review the cladogram and shared-character ideas before moving into later organismal diversity labs.</span></li></ul><div class="todo-note">Check Blackboard for official assignment links, instructions, and submission status.</div></section>
     </main>
     <p class="footer">BIO 153 Principles of Biology Laboratory II &middot; Summer 2026 &middot; Week 1 Lab</p>
   </div>
