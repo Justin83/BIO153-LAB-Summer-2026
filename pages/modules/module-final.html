@@ -3,123 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BIO 153 Weeks 6&ndash;7 Lab Overview: Protists &amp; Fungi</title>
+  <title>BIO 153 Weeks 6-7 Lab Overview: Protists &amp; Fungi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --blue: #004d40; --blue2: #00695c; --gold: #c69214;
-      --ink: #1a2d45; --muted: #4a6080; --line: #c5d3e0;
-      --paper: #ffffff; --soft: #eef4fb; --green: #137a39;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: #edf2f7; color: var(--ink);
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      line-height: 1.62; -webkit-font-smoothing: antialiased; }
-    .page { max-width: 1000px; margin: auto; padding: 24px; }
-    .doc { background: var(--paper); border: 1px solid var(--line);
-      box-shadow: 0 8px 24px rgba(8,49,95,.07); border-radius: 8px; overflow: hidden; }
-    .mod-hero { display: flex; align-items: stretch; border-bottom: 1px solid var(--line); }
-    .mod-hero-bar { width: 6px; background: var(--blue); flex-shrink: 0; }
-    .mod-hero-inner { padding: 20px 26px; flex: 1; display: flex; gap: 20px; align-items: flex-start; }
-    .mod-num { flex-shrink: 0; text-align: center; min-width: 52px; }
-    .mod-num .big { font-size: 3.2rem; font-weight: 800; color: var(--blue);
-      line-height: 1; letter-spacing: -.04em; }
-    .mod-num .lbl { font-size: .6rem; font-weight: 700; text-transform: uppercase;
-      letter-spacing: .12em; color: #9aafcc; }
-    .mod-info { flex: 1; }
-    .eyebrow { color: var(--gold); font-weight: 700; text-transform: uppercase;
-      letter-spacing: .12em; font-size: .67rem; margin-bottom: 5px; }
-    .mod-info h1 { margin: 0 0 6px; color: var(--blue); font-size: 1.75rem;
-      line-height: 1.15; font-weight: 700; }
-    .mod-info .meta { color: var(--muted); font-size: .85rem; font-weight: 600; margin-bottom: 10px; }
-    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-    .chip { background: var(--soft); border: 1px solid var(--line); border-radius: 4px;
-      padding: 5px 11px; display: flex; gap: 6px; align-items: center; }
-    .chip b { color: var(--blue); font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; }
-    .chip span { font-weight: 600; font-size: .85rem; }
-    .section { padding: 20px 26px; border-top: 1px solid var(--line); }
-    h2 { font-size: .65rem; font-weight: 700; text-transform: uppercase;
-      letter-spacing: .12em; color: var(--muted); margin: 0 0 10px; }
-    p { margin: 0 0 10px; } p:last-child { margin-bottom: 0; }
-    .why { border-left: 3px solid var(--blue); background: #f3f7fb;
-      padding: 13px 16px; font-size: .92rem; line-height: 1.65; }
-    .dates { border-left: 3px solid var(--green); background: #effaf2; padding: 13px 16px; }
-    .dates .lbl { display: block; color: var(--blue); font-weight: 700;
-      margin-bottom: 6px; font-size: .85rem; }
-    .dates ul { margin: 0; padding-left: 18px; font-size: .9rem; }
-    .dates li { margin: 4px 0; }
-    .todo { list-style: none; margin: 10px 0 0; padding: 0; }
-    .todo li { display: flex; gap: 11px; padding: 9px 0;
-      border-bottom: 1px solid var(--line); align-items: flex-start; }
-    .todo li:last-child { border-bottom: 0; }
-    .todo .num { flex: 0 0 auto; width: 22px; height: 22px; border-radius: 6px;
-      background: var(--blue); color: #fff; font-weight: 700; font-size: .72rem;
-      display: flex; align-items: center; justify-content: center; margin-top: 2px; }
-    .todo span:not(.num) { font-size: .88rem; line-height: 1.5; }
-    .todo-note { display: inline-flex; align-items: center; gap: 5px; margin-top: 10px;
-      font-size: .75rem; color: var(--muted); background: #edf2f7;
-      border: 1px solid var(--line); border-radius: 4px; padding: 5px 10px; }
-    .footer { text-align: center; color: var(--muted); font-size: .85rem; margin: 18px 0; }
-    @media (max-width: 720px) {
-      .mod-info h1 { font-size: 1.4rem; }
-      .mod-num .big { font-size: 2.5rem; }
-      .mod-hero-inner { gap: 14px; }
-    }
+    :root{--blue:#004d40;--gold:#c69214;--ink:#1a2d45;--muted:#4a6080;--line:#c5d3e0;--paper:#fff;--soft:#eef4fb;--green:#137a39}*{box-sizing:border-box}body{margin:0;background:#edf2f7;color:var(--ink);font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased}.page{max-width:1000px;margin:auto;padding:24px}.doc{background:var(--paper);border:1px solid var(--line);box-shadow:0 8px 24px rgba(8,49,95,.07);border-radius:8px;overflow:hidden}.mod-hero{display:flex;align-items:stretch;border-bottom:1px solid var(--line)}.mod-hero-bar{width:6px;background:var(--blue);flex-shrink:0}.mod-hero-inner{padding:20px 26px;flex:1;display:flex;gap:20px;align-items:flex-start}.mod-num{flex-shrink:0;text-align:center;min-width:52px}.mod-num .big{font-size:1.8rem;font-weight:800;color:var(--blue);line-height:1;letter-spacing:-.03em}.mod-num .lbl{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:#9aafcc}.mod-info{flex:1}.eyebrow{color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.67rem;margin-bottom:5px}.mod-info h1{margin:0 0 6px;color:var(--blue);font-size:1.75rem;line-height:1.15;font-weight:700}.mod-info .meta{color:var(--muted);font-size:.85rem;font-weight:600;margin-bottom:10px}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:var(--soft);border:1px solid var(--line);border-radius:4px;padding:5px 11px;display:flex;gap:6px;align-items:center}.chip b{color:var(--blue);font-size:.7rem;text-transform:uppercase;letter-spacing:.06em}.chip span{font-weight:600;font-size:.85rem}.section{padding:20px 26px;border-top:1px solid var(--line)}h2{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 10px}p{margin:0 0 10px}p:last-child{margin-bottom:0}.synopsis{border-left:3px solid var(--blue);background:#f3f7fb;padding:13px 16px;font-size:.92rem;line-height:1.65}.dates{border-left:3px solid var(--green);background:#effaf2;padding:13px 16px}.dates .lbl{display:block;color:var(--blue);font-weight:700;margin-bottom:6px;font-size:.85rem}.dates ul{margin:0;padding-left:18px;font-size:.9rem}.dates li{margin:4px 0}.todo{list-style:none;margin:10px 0 0;padding:0}.todo li{display:flex;gap:11px;padding:9px 0;border-bottom:1px solid var(--line);align-items:flex-start}.todo li:last-child{border-bottom:0}.todo .num{flex:0 0 auto;width:22px;height:22px;border-radius:6px;background:var(--blue);color:#fff;font-weight:700;font-size:.72rem;display:flex;align-items:center;justify-content:center;margin-top:2px}.todo span:not(.num){font-size:.88rem;line-height:1.5}.todo-note{display:inline-flex;align-items:center;gap:5px;margin-top:10px;font-size:.75rem;color:var(--muted);background:#edf2f7;border:1px solid var(--line);border-radius:4px;padding:5px 10px}.footer{text-align:center;color:var(--muted);font-size:.85rem;margin:18px 0}@media(max-width:720px){.page{padding:14px}.mod-hero-inner{gap:14px;padding:18px}.mod-info h1{font-size:1.4rem}.mod-num .big{font-size:1.55rem}.section{padding:18px}.chip{padding:4px 8px}}
   </style>
 </head>
 <body>
   <div class="page">
     <main class="doc">
-      <div class="mod-hero">
-        <div class="mod-hero-bar"></div>
-        <div class="mod-hero-inner">
-          <div class="mod-num">
-            <div class="big" style="font-size:1.8rem;">W6&ndash;7</div>
-            <div class="lbl">weeks</div>
-          </div>
-          <div class="mod-info">
-            <div class="eyebrow">Weeks 6&ndash;7 &middot; BIO 153 Summer 2026</div>
-            <h1>Organismal Diversity: Protists &amp; Fungi</h1>
-            <div class="meta">July 20 &ndash; August 4, 2026 &middot; Two separate virtual lab assignments</div>
-            <div class="chips">
-              <div class="chip"><b>Week 6</b><span>Protists, due July 28</span></div>
-              <div class="chip"><b>Week 7</b><span>Fungi, due Aug 4</span></div>
-              <div class="chip"><b>Platform</b><span>Connect vLab</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section class="section">
-        <h2>Why It Matters</h2>
-        <div class="why">
-          <p>Protists and fungi are ecologically critical groups that are often underappreciated. Protists include some of the most diverse eukaryotes on Earth and play crucial roles in aquatic food webs and biogeochemical cycles. Fungi are primary decomposers and form essential symbioses with plants. Both groups connect directly to the ecology topics covered in BIO&nbsp;152 Weeks 6 and 7.</p>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Key Dates</h2>
-        <div class="dates">
-          <span class="lbl">All times are Eastern Time (ET)</span>
-          <ul>
-            <li><strong>Organismal Diversity &mdash; Protists (20&nbsp;pts)</strong> &mdash; due Monday, July 28 at 11:59&nbsp;p.m.</li>
-            <li><strong>Organismal Diversity &mdash; Fungi (20&nbsp;pts)</strong> &mdash; due Tuesday, August 4 at 11:59&nbsp;p.m.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Lab To-Do List</h2>
-        <ul class="todo">
-          <li><span class="num">1</span><span>Complete Organismal Diversity &mdash; Protists in McGraw Hill Connect (20&nbsp;pts, due July&nbsp;28).</span></li>
-          <li><span class="num">2</span><span>Complete Organismal Diversity &mdash; Fungi in McGraw Hill Connect (20&nbsp;pts, due Aug&nbsp;4).</span></li>
-          <li><span class="num">3</span><span>Confirm both grades transferred in the Blackboard gradebook.</span></li>
-          <li><span class="num">4</span><span>Review all outstanding lab work and confirm everything is submitted before the course closes August&nbsp;7.</span></li>
-        </ul>
-        <div class="todo-note"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Check off items in Blackboard &mdash; this is a reference copy.</div>
-      </section>
+      <div class="mod-hero"><div class="mod-hero-bar"></div><div class="mod-hero-inner"><div class="mod-num"><div class="big">W6&ndash;7</div><div class="lbl">weeks</div></div><div class="mod-info"><div class="eyebrow">Weeks 6&ndash;7 Lab &middot; BIO 153 Summer 2026</div><h1>Organismal Diversity: Protists &amp; Fungi</h1><div class="meta">July 20 &ndash; August 4, 2026 &middot; Protist and fungi diversity labs</div><div class="chips"><div class="chip"><b>Week 6</b><span>Protists</span></div><div class="chip"><b>Week 7</b><span>Fungi</span></div><div class="chip"><b>Platform</b><span>Connect vLab</span></div></div></div></div></div>
+      <section class="section"><h2>Synopsis</h2><div class="synopsis"><p>This combined overview covers the protist and fungi organismal diversity labs. Protists highlight the range of eukaryotic cell forms and life strategies, while fungi emphasize absorption, decomposition, and symbiotic relationships. Together, these groups connect organismal diversity to ecology and environmental interactions.</p></div></section>
+      <section class="section"><h2>Key Dates</h2><div class="dates"><span class="lbl">Check Blackboard for official availability and submission requirements.</span><ul><li><strong>Organismal Diversity &mdash; Protists</strong> &mdash; due Tuesday, July 28.</li><li><strong>Organismal Diversity &mdash; Fungi</strong> &mdash; due Tuesday, August 4.</li><li><strong>Course wrap-up check</strong> &mdash; complete before the course closes Friday, August 7.</li></ul></div></section>
+      <section class="section"><h2>Lab To-Do List</h2><ul class="todo"><li><span class="num">1</span><span>Complete Organismal Diversity &mdash; Protists in McGraw Hill Connect.</span></li><li><span class="num">2</span><span>Complete Organismal Diversity &mdash; Fungi in McGraw Hill Connect.</span></li><li><span class="num">3</span><span>Confirm both grades transferred to the Blackboard gradebook.</span></li><li><span class="num">4</span><span>Review all outstanding lab work and confirm everything is submitted before the course closes.</span></li></ul><div class="todo-note">Check Blackboard for official assignment links, instructions, and submission status.</div></section>
     </main>
     <p class="footer">BIO 153 Principles of Biology Laboratory II &middot; Summer 2026 &middot; Weeks 6&ndash;7 Overview</p>
   </div>
