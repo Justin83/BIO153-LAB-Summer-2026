@@ -62,6 +62,10 @@
       font-size: .75rem; color: var(--muted); background: #edf2f7;
       border: 1px solid var(--line); border-radius: 4px; padding: 5px 10px; }
     .footer { text-align: center; color: var(--muted); font-size: .85rem; margin: 18px 0; }
+    .cf-star { background: none; border: none; cursor: pointer; padding: 6px 8px;
+      font-size: 36px; line-height: 1; color: #d1d5db;
+      transition: color .1s ease, transform .1s ease; }
+    .cf-star:disabled { cursor: default; }
     @media (max-width: 720px) {
       .mod-info h1 { font-size: 1.4rem; }
       .mod-num .big { font-size: 2.5rem; }
@@ -112,8 +116,88 @@
         <ul class="todo"><li><span class="num">1</span><span>Complete vLab Epithelial Tissue Histology in Connect (10&nbsp;pts, due June&nbsp;30).</span></li><li><span class="num">2</span><span>Complete Connective Tissue Histology in Connect (10&nbsp;pts, due June&nbsp;30).</span></li><li><span class="num">3</span><span>Complete Muscle Tissue Histology in Connect (10&nbsp;pts, due June&nbsp;30).</span></li><li><span class="num">4</span><span>Complete Nervous Tissue Histology in Connect (10&nbsp;pts, due June&nbsp;30).</span></li><li><span class="num">5</span><span>Complete Exercise 41: Vertebrate Animal Tissues as directed in Blackboard (pts TBD, due June&nbsp;30).</span></li><li><span class="num">6</span><span>Confirm all five submissions in Connect and Blackboard gradebook.</span></li></ul>
         <div class="todo-note"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Check off items in Blackboard &mdash; this is a reference copy.</div>
       </section>
+
+      <section class="section">
+        <h2>Quick Check-In</h2>
+        <div id="cf-rating-card" style="border: 1.5px solid var(--line); border-radius: 6px; padding: 18px 20px; text-align: center; transition: opacity 0.35s ease, transform 0.35s ease;">
+          <p style="margin: 0 0 14px; font-size: .9rem; font-weight: 600; color: var(--blue);">Justin wants to know, was this helpful?</p>
+          <div id="cf-stars" role="group" aria-label="Rate this page 1 to 5 stars" style="display: flex; justify-content: center; gap: 4px; margin-bottom: 10px;">
+            <button class="cf-star" data-value="1" aria-label="1 star"  type="button">&#9733;</button>
+            <button class="cf-star" data-value="2" aria-label="2 stars" type="button">&#9733;</button>
+            <button class="cf-star" data-value="3" aria-label="3 stars" type="button">&#9733;</button>
+            <button class="cf-star" data-value="4" aria-label="4 stars" type="button">&#9733;</button>
+            <button class="cf-star" data-value="5" aria-label="5 stars" type="button">&#9733;</button>
+          </div>
+          <p style="margin: 0; font-size: .73rem; color: #9aafcc;">One tap &mdash; no login, no form</p>
+        </div>
+        <div id="cf-thankyou-card" style="display: none; border: 1.5px solid var(--line); border-radius: 6px; padding: 18px 20px; text-align: center; background: #effaf2; opacity: 0; transition: opacity 0.35s ease;">
+          <p id="cf-thankyou-stars" style="font-size: 26px; margin: 0 0 8px; color: #f59e0b; letter-spacing: 4px;">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p style="margin: 0; font-size: .9rem; font-weight: 600; color: var(--blue);">Thank you &mdash; your feedback helps shape this course.</p>
+        </div>
+      </section>
     </main>
     <p class="footer">BIO 153 Principles of Biology Laboratory II &middot; Summer 2026 &middot; Week 2 Lab</p>
   </div>
+
+  <script>
+  (function () {
+    var ENDPOINT = 'https://efxymeviokaocosmpqwf.supabase.co/functions/v1/submit-survey-response';
+    var INSTANCE  = 'bio153_2026_summer_e0z1_lab02_page_rating';
+    var stars         = document.querySelectorAll('.cf-star');
+    var ratingCard    = document.getElementById('cf-rating-card');
+    var thankyouCard  = document.getElementById('cf-thankyou-card');
+    var thankyouStars = document.getElementById('cf-thankyou-stars');
+    var submitted     = false;
+
+    function paintStars(n) {
+      stars.forEach(function (s, i) {
+        s.style.color     = i < n ? '#f59e0b' : '#d1d5db';
+        s.style.transform = i < n ? 'scale(1.15)' : 'scale(1)';
+      });
+    }
+
+    stars.forEach(function (star, idx) {
+      star.addEventListener('mouseenter', function () { if (!submitted) paintStars(idx + 1); });
+      star.addEventListener('mouseleave', function () { if (!submitted) paintStars(0); });
+      star.addEventListener('click', function () {
+        if (submitted) return;
+        submitted = true;
+        var value = star.dataset.value;
+        paintStars(idx + 1);
+        stars.forEach(function (s) { s.disabled = true; s.style.cursor = 'default'; });
+
+        try {
+          fetch(ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              instance_key: INSTANCE,
+              answers: [{ question_key: 'lab02_page_rating', answer_value: value }]
+            })
+          }).catch(function () {});
+        } catch (e) {}
+
+        var n = parseInt(value, 10);
+        var filled = '';
+        for (var i = 0; i < 5; i++) { filled += i < n ? '★' : '☆'; }
+        thankyouStars.textContent = filled;
+
+        setTimeout(function () {
+          ratingCard.style.opacity   = '0';
+          ratingCard.style.transform = 'scale(0.97)';
+          setTimeout(function () {
+            ratingCard.style.display = 'none';
+            thankyouCard.style.display = 'block';
+            requestAnimationFrame(function () {
+              requestAnimationFrame(function () {
+                thankyouCard.style.opacity = '1';
+              });
+            });
+          }, 370);
+        }, 180);
+      });
+    });
+  })();
+  </script>
 </body>
 </html>
