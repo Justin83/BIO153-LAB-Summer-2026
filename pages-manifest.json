@@ -110,27 +110,7 @@
       "category": "module-overview",
       "data": "static",
       "status": "ready",
-      "description": "Week 3: Sponges, cnidarians, and animal kingdom survey"
-    },
-    {
-      "name": "Week 4 Lab Overview",
-      "path": "pages/modules/module-4.html",
-      "version": "1.0",
-      "module": 4,
-      "category": "module-overview",
-      "data": "static",
-      "status": "ready",
-      "description": "Week 4: Fetal pig dissection and animal kingdom survey"
-    },
-    {
-      "name": "Final Week Lab Overview",
-      "path": "pages/modules/module-final.html",
-      "version": "1.0",
-      "module": null,
-      "category": "module-overview",
-      "data": "static",
-      "status": "ready",
-      "description": "Weeks 6–7: Protists and fungi organismal diversity"
+      "description": "Week 3: Organismal Diversity — Fungi"
     },
     {
       "name": "Asset Test",
