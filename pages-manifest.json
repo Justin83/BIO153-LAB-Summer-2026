@@ -113,6 +113,16 @@
       "description": "Week 3: Organismal Diversity — Fungi"
     },
     {
+      "name": "Week 4 Lab Overview",
+      "path": "pages/modules/module-4.html",
+      "version": "1.0",
+      "module": 4,
+      "category": "module-overview",
+      "data": "static",
+      "status": "ready",
+      "description": "Week 4: Animal Tissues and Histology"
+    },
+    {
       "name": "Asset Test",
       "path": "pages/test/asset-test.html",
       "version": "1.0",
