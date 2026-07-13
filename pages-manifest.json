@@ -123,6 +123,16 @@
       "description": "Week 4: Animal Tissues and Histology"
     },
     {
+      "name": "Week 5 Lab Overview",
+      "path": "pages/modules/module-5.html",
+      "version": "1.0",
+      "module": 5,
+      "category": "module-overview",
+      "data": "static",
+      "status": "ready",
+      "description": "Week 5: Fetal Pig Dissection Parts 1 and 2"
+    },
+    {
       "name": "Asset Test",
       "path": "pages/test/asset-test.html",
       "version": "1.0",
