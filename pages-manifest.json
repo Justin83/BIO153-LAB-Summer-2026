@@ -133,6 +133,26 @@
       "description": "Week 5: Fetal Pig Dissection Parts 1 and 2"
     },
     {
+      "name": "Week 6 Lab Overview",
+      "path": "pages/modules/module-6.html",
+      "version": "1.0",
+      "module": 6,
+      "category": "module-overview",
+      "data": "static",
+      "status": "ready",
+      "description": "Week 6: Population Growth and Competition"
+    },
+    {
+      "name": "Week 7 Lab Overview",
+      "path": "pages/modules/module-7.html",
+      "version": "1.0",
+      "module": 7,
+      "category": "module-overview",
+      "data": "static",
+      "status": "ready",
+      "description": "Week 7: Biological Sampling and Comparing Ecosystems"
+    },
+    {
       "name": "Asset Test",
       "path": "pages/test/asset-test.html",
       "version": "1.0",
